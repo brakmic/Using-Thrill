@@ -1,12 +1,7 @@
 #!/bin/sh
 ################################################################################
 # compile.sh
-#
-# Part of Project Thrill - http://project-thrill.org
-#
-# Copyright (C) 2016 Timo Bingmann <tb@panthema.net>
-#
-# All rights reserved. Published under the BSD-2 license in the LICENSE file.
+# For downloading of external sources and automatic compilation
 ################################################################################
 
 set -ex
@@ -59,5 +54,3 @@ cd build
 cmake .. $CMAKE_OPTS $@
 make $MAKEOPTS
 ctest -V
-
-################################################################################
