@@ -1,0 +1,7 @@
+cmake_minimum_required (VERSION 2.8)
+project (kmeans)
+include_directories("extlib/thrill")
+add_subdirectory (extlib/thrill)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -O3 -std=c++14 -Wall -Wextra")
+add_executable(kmeans kmeans1.cpp)
+target_link_libraries(kmeans thrill)
